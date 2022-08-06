@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<head>
+	My Love
+<head>
+ 
+<html>
+<body>
+    <div id="code">
+		I'm very upset and regretful. <br/>
+		I think I can learn to manage my emotions and be realistic. <br/>
+		It's time for me to grow up. <br/>
+        <br/>
+		Once again, <br/>
+		I apologize for my rudeness. <br/>
+		Please forgive me, please, I can't leave you, <br/>
+		From now on, I will never let you down. <br/>
+
+    <div>
+    <script>
+        Element.prototype.typewriter = function (a) {
+            var d = this,
+                c = d.innerHTML,
+                b = 0;
+            d.innerHTML = "";
+            var e = setInterval(function () {
+                b++
+                d.innerHTML = c.substring(0, b) + (b & 1 ? "|" : ""); //&1 这个表达式 可以用来 判断 a的奇偶性
+                if (b >= c.length) {
+                    clearInterval(e)
+                }
+            }, 150)
+            return this
+    
+        }
+        document.getElementById("code").typewriter();
+    </script>
+</body>
+</html>
