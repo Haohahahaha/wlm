@@ -1,6 +1,6 @@
 title: 二人小世界
 description: hr&lm
 show_downloads: false
-theme: modernist
+theme: jekyll-theme-modernist
 gems:
   - jekyll-mentions
